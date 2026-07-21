@@ -44,5 +44,46 @@ public class operation {
             System.out.println(y); //output = b
 
             // compailation successfully
+
+            //type conversion
+            byte q = 127;
+            System.out.println(q);
+
+            byte w = 125;
+            int a = w;
+            System.out.println(a);
+
+            // int r = 12;
+            // byte p = r;
+            // System.out.println(p);   ERROR
+
+            //casting
+
+            int r = 12;
+            byte p = (byte)r;
+            System.out.println(r); // 12 (just because 12 is a smaller number)
+
+            int i = 257;
+            byte o = (byte)i;
+            System.out.println(o);  // 1 (because 257 % 256 = 1)
+
+            float m = 12.8f;
+            int g = (int)m;
+            System.out.println(g); // 12 (it cut the number after(.)point)
+
+
+            //type promotion
+
+            byte z = 10;
+            byte v = 20;
+            //if we normaly do z*v it will more then the byte range.so we can promote it to int
+            int res = z * v;
+            System.out.println(res); //200
+
+
+
+
+
+
         }
 }
